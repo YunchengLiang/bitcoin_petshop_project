@@ -1,0 +1,33 @@
+{
+  "name": "pet-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "coverage": "truffle run coverage",
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:verbose": "truffle test --compile-all-debug --show-events",
+    "test:mocha": "truffle compile && mocha --exit --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "4.0.0",
+    "@openzeppelin/test-environment": "0.1.9",
+    "@openzeppelin/test-helpers": "0.5.11",
+    "chai": "4.3.4",
+    "concat-stream": "^1.5.2",
+    "lite-server": "^2.3.0",
+    "lodash.template": "^4.5.0",
+    "solidity-coverage": "0.7.16",
+    "truffle": "5.3.3",
+    "underscore": "1.12.1"
+  },
+  "dependencies": {
+    "@openzeppelin/cli": "^2.8.2"
+  }
+}

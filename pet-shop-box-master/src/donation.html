@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pet‘s Donation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      body {font-family: "Arial", sans-serif}
+      h1 {font-family: 'Arial', sans-serif}
+    </style>
+</head>
+
+<body>
+  <header style="padding:14px 14px">
+        <h1 class="text-center text">Pet's Donations</h1>
+        <p class="text-center">Donate to the pet shop to help cute dogs!</p>
+        <div class="row" style="text-align: center;">
+	 <div class="btn-group text-center">
+            <a class="btn btn-default align-items-center mb-4 mb-sm-1 me-3 px-9 py-3 btn-outline-light text-dark shadow" href="./index.html">
+              <span>Home</span>
+            </a>
+          </div> 
+        </div>
+        <br/>
+          <div class="row">
+            <p id="accountBalance" class="text-center"></p>
+            <p id="accountAddress" class="text-center"></p>
+          <hr />
+            <form onSubmit="DonationApp.sendDonation(); return false;" style="text-align: center;">
+              You will donate:
+              <input class="text-center" type="text" id="newString"> ETH
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>  
+            </div>
+
+  </header>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/donation.js"></script>
+</body>
+
+</html>
